@@ -210,7 +210,8 @@ LOGGING = {
 }
 
 # Custom user app
-AUTH_USER_MODEL = os.getenv('AUTH_USER_MODEL', 'users.User')
+AUTH_USER_MODEL = 'users.CustomUser'
+
 
 AUTHENTICATION_BACKENDS = (
     'users.backends.EmailBackend',
